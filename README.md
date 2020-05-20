@@ -9,7 +9,7 @@
 ## crc8
 
 ### crc8 by hand
-···
+```
 z.B.input=0x31/polynomial=0x11d(0b1 0001 1101)
 0011 0001   
   10 0011 101   
@@ -21,9 +21,9 @@ z.B.input=0x31/polynomial=0x11d(0b1 0001 1101)
         1 0001 1101   
         0 0101 0111   
         0x   5    7 
-···
+```
 ### do it with python
-\\\
+```
 input=0x31
 polynomial=0x11d
 for bit in range(8):
@@ -33,20 +33,21 @@ for bit in range(8):
     else:
         input<<=1
 print(hex(input))
-\\\
+```
 
 ## crc32
 ### crc32 by hand
 #### rules
-1.reverse/reflect the input
-2.initial value
-3.XOR with polynomial
-4.reverse output
+* reverse/reflect the input
+* initial value
+* XOR with polynomial
+* reverse output
 #### an EXAMPLE
-input=0x31
-poly=0x104c11db7
-initial value=0xffffffff
-final value=0xffffffff
+  input=0x31
+  poly=0x104c11db7
+  initial value=0xffffffff
+  final value=0xffffffff
+```
           0011 0001
 reflect   1000 1100
 XOR inival0111 0011 1111 1111 1111 1111 1111 1111
@@ -61,9 +62,10 @@ poly             10 0000 1001 1000 0010 0011 1011 0110 111
 XOR finval          1110 1101 1111 0111 0011 1011 1100 0001
 reflect             1000 0011 1101 1100 1110 1111 1011 0111
                 0x     8    3    d    c    e    f    b    7
+```
 ### normal lookup table & byte-by-byte algoritm using normal table(poly=0x104c11db7)
 #### generate a look up table
-
+```
 poly_crc32_normal=0x104c11db7
 crc32_table_normal=[]
 for byte in range(256):
@@ -76,9 +78,9 @@ for byte in range(256):
         else:
             operator <<= 1
     crc32_table_normal.append(operator)
-'''
+```
 
-'''
+```
 0x0        0x4c11db7  0x9823b6e  0xd4326d9  0x130476dc 0x17c56b6b 0x1a864db2 0x1e475005
 0x2608edb8 0x22c9f00f 0x2f8ad6d6 0x2b4bcb61 0x350c9b64 0x31cd86d3 0x3c8ea00a 0x384fbdbd
 0x4c11db70 0x48d0c6c7 0x4593e01e 0x4152fda9 0x5f15adac 0x5bd4b01b 0x569796c2 0x52568b75
@@ -111,9 +113,9 @@ for byte in range(256):
 0xe3a1cbc1 0xe760d676 0xea23f0af 0xeee2ed18 0xf0a5bd1d 0xf464a0aa 0xf9278673 0xfde69bc4
 0x89b8fd09 0x8d79e0be 0x803ac667 0x84fbdbd0 0x9abc8bd5 0x9e7d9662 0x933eb0bb 0x97ffad0c
 0xafb010b1 0xab710d06 0xa6322bdf 0xa2f33668 0xbcb4666d 0xb8757bda 0xb5365d03 0xb1f740b4
-'''
+```
 #### how to use the table
-'''
+```
 def crc32_normal(line):
     var=0xffffffff
     for ch in line:
@@ -125,10 +127,10 @@ def crc32_normal(line):
         print(hex(var),'   ',hex(int('{:032b}'.format(var)[::-1],2)))
     var=int('{:032b}'.format(var)[::-1],2)
     return var^0xffffffff
-'''
+```
 ### reflected look up table & byte-by-byte algoritm using normal table(poly=0xedb88320 or poly=0x104c11db7)
 #### generate a reflected table
-'''
+```
 poly=0x104c11db7
 crc32_table_recip=[]
 for byte in range(256):
@@ -143,9 +145,9 @@ for byte in range(256):
             operator<<=1
     operator=int('{:032b}'.format(operator)[::-1],2)
     crc32_table_recip.append(operator)
-'''
+```
 or you can use poly=0xedb88320
-'''
+```
 crc32_table_polyrev=[]
 poly_rev=0xedb88320
 for byte in range(256):
@@ -157,9 +159,9 @@ for byte in range(256):
         else:
             operator>>=1
     crc32_table_polyrev.append(operator)
-'''
+```
 and their output---the lookup tables are exactly same
-'''
+```
 0x0        0x77073096 0xee0e612c 0x990951ba 0x76dc419  0x706af48f 0xe963a535 0x9e6495a3
 0xedb8832  0x79dcb8a4 0xe0d5e91e 0x97d2d988 0x9b64c2b  0x7eb17cbd 0xe7b82d07 0x90bf1d91
 0x1db71064 0x6ab020f2 0xf3b97148 0x84be41de 0x1adad47d 0x6ddde4eb 0xf4d4b551 0x83d385c7
@@ -192,9 +194,9 @@ and their output---the lookup tables are exactly same
 0xaed16a4a 0xd9d65adc 0x40df0b66 0x37d83bf0 0xa9bcae53 0xdebb9ec5 0x47b2cf7f 0x30b5ffe9
 0xbdbdf21c 0xcabac28a 0x53b39330 0x24b4a3a6 0xbad03605 0xcdd70693 0x54de5729 0x23d967bf
 0xb3667a2e 0xc4614ab8 0x5d681b02 0x2a6f2b94 0xb40bbe37 0xc30c8ea1 0x5a05df1b 0x2d02ef8d
-'''
+```
 #### how to use the table
-'''
+```
 def crc32(line):
     var=0xffffffff
     for ch in line:
@@ -202,6 +204,6 @@ def crc32(line):
         operator=(operator^var)&0xff
         var=crc32_table_recip[operator]^(var>>8)
     return var^0xffffffff
-'''
+```
 ## nothing to see here
 your algorithm needs to choose one from these three to get the correct checksum:'reflect the table operator','reflect the algorithm input' and 'reflect the polynomial'
