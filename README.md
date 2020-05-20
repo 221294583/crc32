@@ -1,29 +1,29 @@
 ## catalogue 目录
-1.crc8
-  1.1 crc8 by hand/crc8手算
-  1.2 crc8 python coding(one-character wide)/crc8python代码(单字符宽度)
-2.crc32
-  2.1 crc32 by hand/crc32手算
-  2.2 crc32's normal lookup table & table-based algorithm/crc32正序表以及查表算法
-  2.3 crc32's reflected lookup table & table-based algorithm/crc32倒位表及查表算法
-3.???
+  * crc8 by hand/crc8手算
+  * crc8 python coding(one-character wide)/crc8python代码(单字符宽度)
+  * crc32 by hand/crc32手算
+  * crc32's normal lookup table & table-based algorithm/crc32正序表以及查表算法
+  * crc32's reflected lookup table & table-based algorithm/crc32倒位表及查表算法
+  * ???
 
 ## crc8
 
 ### crc8 by hand
+···
 z.B.input=0x31/polynomial=0x11d(0b1 0001 1101)
-0011 0001
-  10 0011 101
-  01 0010 101
-   1 0001 1101 
-   0 0011 0111
-       10 0011 101
-       01 0100 101
-        1 0001 1101
-        0 0101 0111
-        0x   5    7
+0011 0001   
+  10 0011 101   
+  01 0010 101   
+   1 0001 1101     
+   0 0011 0111    
+       10 0011 101    
+       01 0100 101    
+        1 0001 1101   
+        0 0101 0111   
+        0x   5    7 
+···
 ### do it with python
-'''
+\\\
 input=0x31
 polynomial=0x11d
 for bit in range(8):
@@ -33,7 +33,7 @@ for bit in range(8):
     else:
         input<<=1
 print(hex(input))
-'''
+\\\
 
 ## crc32
 ### crc32 by hand
@@ -63,7 +63,7 @@ reflect             1000 0011 1101 1100 1110 1111 1011 0111
                 0x     8    3    d    c    e    f    b    7
 ### normal lookup table & byte-by-byte algoritm using normal table(poly=0x104c11db7)
 #### generate a look up table
-'''
+
 poly_crc32_normal=0x104c11db7
 crc32_table_normal=[]
 for byte in range(256):
@@ -77,6 +77,7 @@ for byte in range(256):
             operator <<= 1
     crc32_table_normal.append(operator)
 '''
+
 '''
 0x0        0x4c11db7  0x9823b6e  0xd4326d9  0x130476dc 0x17c56b6b 0x1a864db2 0x1e475005
 0x2608edb8 0x22c9f00f 0x2f8ad6d6 0x2b4bcb61 0x350c9b64 0x31cd86d3 0x3c8ea00a 0x384fbdbd
