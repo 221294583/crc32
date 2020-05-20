@@ -206,4 +206,7 @@ def crc32(line):
     return var^0xffffffff
 ```
 ## nothing to see here
-your algorithm needs to choose one from these three to get the correct checksum:'reflect the table operator','reflect the algorithm input' and 'reflect the polynomial'
+your algorithm needs to choose one from these three to get the correct checksum:
+* 'reflect the table operator';
+* 'reflect the algorithm input';
+* 'reflect the polynomial'.
