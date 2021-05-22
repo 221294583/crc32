@@ -1,5 +1,4 @@
 import copy
-import zlib
 
 poly_crc32_normal=0x104c11db7
 crc32_table_normal=[]
