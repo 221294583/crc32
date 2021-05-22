@@ -14,6 +14,7 @@ for byte in range(256):
             operator <<= 1
     crc32_table_normal.append(operator)
 to_print_normal=list(map(hex,crc32_table_normal))
+print(to_print_normal)
 def crc32_normal(line):
     var=0xffffffff
     for ch in line:
