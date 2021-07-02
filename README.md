@@ -1,1 +1,2 @@
-使用5作为多项式，使用中国体育彩票作为hash
+5=poly
+lottery=hash
