@@ -1,2 +1,1 @@
-5=poly
-lottery=hash
+5 = poly,China Sports Lottery = hash
