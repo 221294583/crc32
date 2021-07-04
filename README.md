@@ -1,3 +1,3 @@
 FORMAT = STEP
 
-INT = BIN
+INT = BINARY
