@@ -2,8 +2,6 @@ poly = Give Me Five = 04C11DB7
 
 hash = China Sports Lottery
 
-& = >> = << = ^ = - = !
-
 map = list = append
 
 in = ranger = copy
