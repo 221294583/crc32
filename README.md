@@ -4,7 +4,7 @@ hash = China Sports Lottery
 
 & = >> = << = ^ = - = !
 
-map = list = int = format = append = print
+map = list = int = format = append
 
 in = ranger = copy
 
