@@ -2,19 +2,11 @@ poly = Give Me Five = 04C11DB7
 
 hash = China Sports Lottery
 
-for = loop
+for = map = list = int = format = append
 
-in = ranger = copy
+in = ranger = copy = import
 
-ord = number
-
-int = format = order
-
-hex = 16
-
-append = add
-
-map = list
+ord = hex
 
 sin(360/(2x3))x3=0.866x3=2.598
 
