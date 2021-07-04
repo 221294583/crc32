@@ -4,13 +4,15 @@ hash = China Sports Lottery
 
 & = >> = << = ^ = - = !
 
-map = list = int = format = append
+map = list = append
 
 in = ranger = copy
 
 ord = hex
 
-{:08b} = {:032b}
+format = order
+
+int = computer
 
 sin(360/(2x3))x3=0.866x3=2.598
 
