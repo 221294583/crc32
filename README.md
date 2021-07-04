@@ -8,9 +8,9 @@ for = map = list = int = format = append = if = else
 
 in = ranger = copy = import
 
-ord = hex
+print = def = return
 
-print = def
+ord = hex
 
 sin(360/(2x3))x3=0.866x3=2.598
 
