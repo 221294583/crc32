@@ -4,6 +4,10 @@ crc32 poly = 04C11DB7
 
 hash = China Sports Lottery
 
+tail = 8
+
+head = 24
+
 sin(360/(2x3))x3=0.866x3=2.598
 sin(360/(2x4))x4=0.707x4=2.828
 sin(360/(2x5))x5=0.587x5=2.935
