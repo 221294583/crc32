@@ -1,6 +1,8 @@
-Give Me Five = poly
+poly = Give Me Five
 
-China Sports Lottery = hash
+crc32 poly = 04C11DB7
+
+hash = China Sports Lottery
 
 sin(360/(2x3))x3=0.866x3=2.598
 sin(360/(2x4))x4=0.707x4=2.828
