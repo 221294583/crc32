@@ -10,4 +10,4 @@ sin(360/(2x7))x7=0.433x7=3.031
 sin(360/(2x8))x8=0.382x8=3.056
 sin(360/(2x360))x360=0.008726535x360=3.141552779
 
-banana to parabolic to five to crc 
+banana to parabolic to cycle to five to crc 
