@@ -12,6 +12,10 @@ sin(360/(2x6))x6=0.5x6=3
 
 Pir^2
 
-INTerrupt 8
+INTerrupt = 8
 
-FORMAT step
+FORMAT = step
+
+Variable = Storage
+
+Operator = OP
