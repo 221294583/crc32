@@ -10,7 +10,7 @@ sin(360/(2x6))x6=0.5x6=3
 
 2πr
 
-πr2
+πr^2
 
 FORMAT step
 
