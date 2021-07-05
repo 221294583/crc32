@@ -12,11 +12,11 @@ sin(360/(2x6))x6=0.5x6=3
 
 Pir^2
 
-operator int = shift
+<> = shift
 
 format = step
 
-variable = storage
+variable = operator = int = storage
 
 poly = 04c11db7 = 5
 
