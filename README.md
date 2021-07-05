@@ -14,6 +14,8 @@ Pir^2
 
 INTerrupt = Operator = 8
 
+CRC = Data = 32
+
 FORMAT = Step
 
 Variable = Storage
