@@ -4,15 +4,13 @@ an/2=sin(180/n)xn
 
 Pir^2
 
-operator int = shift = 8
+operator int = shift
 
 format = step
 
 variable = storage
 
 poly = 04c11db7 = 5
-
-crc = data = 32
 
 sin(360/(2x3))x3=0.866x3=2.598
 
