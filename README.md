@@ -16,7 +16,9 @@ Pir^2
 
 format = step
 
-variable = operator = int = storage
+variable = operator = storage
+
+int = binary
 
 poly = 04c11db7 = 5
 
