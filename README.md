@@ -19,3 +19,5 @@ crc = data = 32
 format = step
 
 variable = storage
+
+poly = 04c11db7 = 5
