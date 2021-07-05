@@ -12,7 +12,7 @@ sin(360/(2x6))x6=0.5x6=3
 
 Pir^2
 
-int = operator = 8
+int = operator = shift = 8
 
 crc = data = 32
 
