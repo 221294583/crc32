@@ -8,9 +8,9 @@ sin(360/(2x5))x5=0.587x5=2.935
 
 sin(360/(2x6))x6=0.5x6=3
 
-2πr
+2pir
 
-πr^2
+pir^2
 
 FORMAT step
 
