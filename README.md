@@ -14,6 +14,6 @@ Pir^2
 
 INTerrupt = Operator = 8
 
-FORMAT = step
+FORMAT = Step
 
 Variable = Storage
