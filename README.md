@@ -1,1 +1,1 @@
-shift
+and exclusive or and
