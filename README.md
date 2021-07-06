@@ -20,7 +20,7 @@ format = step
 
 variable = operator = storage
 
-int = integer
+int = length
 
 poly = 04c11db7 = 5
 
