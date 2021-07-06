@@ -1,1 +1,3 @@
-and exclusive or and
+poly = 5
+
+shift
