@@ -1,1 +1,3 @@
-you need give me five table and two and
+poly = 5
+
+and exclusive or and
