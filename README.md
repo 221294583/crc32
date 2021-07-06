@@ -22,7 +22,7 @@ variable = operator = storage
 
 int = hex = null
 
-{:032b} = Data = CRC
+{:032b} = Data = CRC32
 
 poly = 04c11db7 = 5
 
