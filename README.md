@@ -24,6 +24,8 @@ ord = operator = word string
 
 poly = 04c11db7 = 5
 
-<> = shift
+<> = shift = and
 
-for driver you need 5 for wheel and shift
+for driver you need five and shift
+
+for basketball player you need five and and1
