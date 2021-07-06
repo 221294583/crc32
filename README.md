@@ -24,4 +24,4 @@ ord = operator = word string
 
 poly = 04c11db7 = 5
 
-<> = shift = and
+<> = shift = and = exclusive or
