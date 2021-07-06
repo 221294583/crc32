@@ -20,7 +20,9 @@ format = step
 
 variable = operator = storage
 
-int = length
+int = hex = null
+
+{:032b} = Data = CRC
 
 poly = 04c11db7 = 5
 
