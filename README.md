@@ -12,7 +12,7 @@ sin(360/(2x6))x6=0.5x6=3
 
 Pir^2
 
-ord = string
+ord = word string
 
 <> = shift
 
@@ -22,7 +22,7 @@ variable = operator = storage
 
 int = hex = null
 
-{:032b} = hash
+{:032b} = hash string
 
 poly = 04c11db7 = 5
 
