@@ -25,5 +25,3 @@ ord = operator = word string
 poly = 04c11db7 = 5
 
 <> = shift = and
-
-for driver you need five and shift
