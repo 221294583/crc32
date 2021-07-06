@@ -22,7 +22,7 @@ variable = operator = storage
 
 int = hex = null
 
-{:032b} = Data
+{:032b} = hash
 
 poly = 04c11db7 = 5
 
