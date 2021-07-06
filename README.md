@@ -12,18 +12,18 @@ sin(360/(2x6))x6=0.5x6=3
 
 Pir^2
 
-ord = operator = word string
-
-<> = shift
-
 format = step
 
-variable = storage
-
 int = hex = null
+
+ord = operator = word string
+
+variable = storage
 
 {:032b} = hash string
 
 poly = 04c11db7 = 5
+
+<> = shift
 
 for driver you need 5 for wheel and 6 for shift
