@@ -16,9 +16,9 @@ format = step
 
 int = hex = null
 
-ord = operator = word string
-
 variable = storage
+
+ord = operator = word string
 
 {:032b} = hash string
 
