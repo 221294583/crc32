@@ -12,13 +12,13 @@ sin(360/(2x6))x6=0.5x6=3
 
 Pir^2
 
-ord = word string
+ord = operator = word string
 
 <> = shift
 
 format = step
 
-variable = operator = storage
+variable = storage
 
 int = hex = null
 
