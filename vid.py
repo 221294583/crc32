@@ -2,7 +2,7 @@ crc32_poly=0x104c11db7
 crc32_table=[]
 for operator in range(256):
     operator<<=24
-    for bit in range(8):
+    for byte in range(8):
         if (operator&0x80000000)!=0:
             operator<<=1
             operator^=crc32_poly
