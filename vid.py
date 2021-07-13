@@ -13,8 +13,8 @@ to_print_normal=list(map(hex,crc32_table_normal))
 print(to_print_normal)
 def crc32_normal(line):
     var=0xffffffff
-    for ch in line:
-        operator=ord(ch)
+    for character in line:
+        operator=ord(character)
         operator=int('{:08b}'.format(operator)[::-1],2)
         operator=operator^(var>>24)
         var=(crc32_table_normal[operator])^(var<<8)&0xffffffff
