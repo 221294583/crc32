@@ -9,8 +9,6 @@ for operator in range(256):
         else:
             operator<<=1
     crc32_table.append(operator)
-to_print=list(map(hex,crc32_table))
-print(to_print)
 def crc32(line):
     var=0xffffffff
     for character in line:
