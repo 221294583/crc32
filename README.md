@@ -1,1 +1,1 @@
-Adidas AG
+Exclusive or
