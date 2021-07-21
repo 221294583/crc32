@@ -1,1 +1,1 @@
-Exclusive or
+credit:andy
