@@ -1,1 +1,1 @@
-credit:5.cn
+credit:58.com
